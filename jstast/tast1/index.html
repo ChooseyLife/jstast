@@ -3,8 +3,49 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css1.css" />
+    <script type="text/javascript" src=""></script>
 </head>
 <body>
+<div class="bodys">
+    <ul id="change">
 
+        <li style="background-color:yellow"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <script>
+            var colors = new Array("blue","red","green");
+            var oUl = document.getElementById("change");
+            var allLi=oUl.getElementsByTagName("li");
+            var len = allLi.length;
+            var num =1;
+            function changeColor(){
+                num++;
+                if(num >= 10){
+                    num = 1;
+                }
+                //var colorIndex = Math.round(Math.random()*2);
+                var color_li=colors[Math.round(Math.random()*2)];
+                console.log(color_li);
+                for(var i = 0 ; i < len; i++){
+                    allLi[i] .style.backgroundColor="";
+
+                }
+                allLi[ num - 1].style.backgroundColor=color_li;
+                //document.wirte(colorIndex);
+
+            }
+            setInterval("changeColor()",1000);
+        </script>
+
+    </ul>
+</div>
 </body>
 </html>

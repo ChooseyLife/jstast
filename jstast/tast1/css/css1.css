@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+body{
+    background-color:#f0f0f0;
+}
+ul{list-style-type:none;}
+.bodys{max-width:640px;margin:0 auto;}
+.bodys li{float:left;width:30.33333%;padding:13% 0;;margin:1.5%;;background:#fafafa;text-align:center;border-radius:20%;}
+.clears{clear:both;}
