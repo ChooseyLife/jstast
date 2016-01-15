@@ -1,49 +1,49 @@
-/**
+Ôªø/**
  * Created by u on 2016/1/15.
  */
 /**
  * Created by u on 2016/1/15.
  */
 window.onload = function () {
-    var inNum = document.getElementById("number");  // ‰»Î≤Œº”»À ˝±Ìµ•;
-    var textAre = document.getElementById("text-area"); // ‰≥ˆ≤Œº”’ﬂ∑÷≈‰Ω«…´;
+    var inNum = document.getElementById("number");  //ËæìÂÖ•ÂèÇÂä†‰∫∫Êï∞Ë°®Âçï;
+    var textAre = document.getElementById("text-area"); //ËæìÂá∫ÂèÇÂä†ËÄÖÂàÜÈÖçËßíËâ≤;
     var playerNum, killerNum, peopleNum, killer;
     var numArr = new Array();
 
     document.getElementById("btn").onclick = function () {
-        numArr.length = Math.floor(inNum.value);//…Ë÷√ ˝◊È≥§∂»
+        numArr.length = Math.floor(inNum.value);//ËÆæÁΩÆÊï∞ÁªÑÈïøÂ∫¶
         textAre.innerHTML = "";
-        gameRule();//”Œœ∑πÊ‘Ú
+        gameRule();//Ê∏∏ÊàèËßÑÂàô
     }
 
     function gameRule() {
         if (inNum.value >= 6 && inNum.value < 19) {
-            alert("Game start£¨ø™ º∑÷≈‰Ω«…´");
+            alert("Game startÔºåÂºÄÂßãÂàÜÈÖçËßíËâ≤");
         }
         else {
-            alert("”Œœ∑πÊ‘ÚπÊ∂®»À ˝◊Ó…Ÿ“™”–6»À£¨◊Ó∂‡18»À£¨«Î÷ÿ–¬ ‰»Î");
+            alert("Ê∏∏ÊàèËßÑÂàôËßÑÂÆö‰∫∫Êï∞ÊúÄÂ∞ëË¶ÅÊúâ6‰∫∫ÔºåÊúÄÂ§ö18‰∫∫ÔºåËØ∑ÈáçÊñ∞ËæìÂÖ•");
         }
-        playerNum = parseInt(inNum.value);//ÕÊº“»À ˝
-        killerNum = Math.floor(playerNum / 4);//…± ÷»À ˝
-        peopleNum = playerNum - killerNum;//∆Ω√Ò»À ˝
+        playerNum = parseInt(inNum.value);//Áé©ÂÆ∂‰∫∫Êï∞
+        killerNum = Math.floor(playerNum / 4);//ÊùÄÊâã‰∫∫Êï∞
+        peopleNum = playerNum - killerNum;//Âπ≥Ê∞ë‰∫∫Êï∞
         allotPlayer();
 
         //if (playerNum === 8) killernum = 1;
-        //var sum = "ÕÊº““ªπ≤”–£∫"+playerNum +"£¨…± ÷”–£∫"+killerNum+"£¨∆Ω√Ò”–£∫"+peopleNum;
+        //var sum = "Áé©ÂÆ∂‰∏ÄÂÖ±ÊúâÔºö"+playerNum +"ÔºåÊùÄÊâãÊúâÔºö"+killerNum+"ÔºåÂπ≥Ê∞ëÊúâÔºö"+peopleNum;
     }
 
     function allotPlayer() {
-        //…Ë÷√numArr ˝◊È¿Ô√Êµƒ÷µ∂º «∆Ω√Ò
+        //ËÆæÁΩÆnumArrÊï∞ÁªÑÈáåÈù¢ÁöÑÂÄºÈÉΩÊòØÂπ≥Ê∞ë
         for (var i = 0; i < numArr.length; i++) {
-            numArr[i] = "∆Ω√Ò";
+            numArr[i] = "Âπ≥Ê∞ë";
         }
         for (var i = 0; i < killerNum; i++) {
-            killer = Math.ceil(Math.random() * playerNum);
-            numArr[killer] = "…± ÷";
+            killer = Math.ceil(Math.random() * playerNum)-1;
+            numArr[killer] = "ÊùÄÊâã";
 
         }
         for (var i = 0; i < numArr.length; i++) {
-            textAre.innerHTML += (i + 1) + "∫≈" + numArr[i] + "<br/>";
+            textAre.innerHTML += (i + 1) + "Âè∑" + numArr[i] + "<br/>";
         }
     }
 }
