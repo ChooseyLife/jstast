@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>日志</title>
+    <link rel="stylesheet" type="text/css" href="css/journal.css" />
+    <script type="text/javascript" src="js/journal.js" charset="UTF-8"></script>
+    <script src="http://cdn.bootcss.com/less.js/2.5.3/less.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container wrap">
+        <div class="row">
+            <header>
+                <div class="head">
+
+                    <div class="text-center">
+                        <span>游戏结果</span>
+                    </div>
+
+                </div>
+            </header>
+            <main>
+                <div class="radiusNum text-center">
+                    <span id="number1">身份</span>
+                </div>
+                <div class="outside">
+                    <div style="" class="god">
+                        <p id="aP">
+                        </p>
+                    </div>
+                </div>
+
+            </main>
+
+            <footer>
+                <div class="btn-wrap">
+
+                    <input type="button" value="重新开始" id="btn">
+                    <script>
+                        document.getElementById("btn").onclick = function (){
+                            window.location.href="index.html";
+                        }
+                    </script>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

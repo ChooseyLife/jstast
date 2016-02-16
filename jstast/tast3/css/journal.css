@@ -1,0 +1,91 @@
+.wrap{
+    width:100%;
+    max-width:400px;
+    font-family: "Hiragino Sans GB W3", sans-serif;
+    color: #ffffff;
+    background-color: #29bde0;
+    font-size:62.5%;
+    margin:0 auto;
+}
+
+header{
+    border-bottom: 1px solid #74d4eb;
+    overflow: hidden;
+}
+header span{
+    margin-top: 0.4rem;
+    display: inline-block;
+    font-size: 2.1rem;;
+}
+header img{
+    cursor: pointer;
+    height: 28px;
+}
+header .turn{
+    width:4%;
+}
+header .cloth{
+    width: 6%;
+}
+header .head {
+    margin:0 auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+main{
+    position: relative;
+}
+main .radiusNum{
+    position: absolute;
+    width: 5.5rem;
+
+    color: #f56b81;
+    border:5px solid #ffffff;
+    border-bottom: 0px;
+    font-size: 2rem;
+
+    background-color:#ffedc5;
+
+    left: 10%;
+    top: -7.4%;
+
+    cursor: pointer;
+}
+
+main .outside{
+    background-color: #ffedc5;
+    width: 80%;
+    margin:15% auto;
+    border: 5px solid #ffffff;
+}
+
+main .god{
+    width:195px;
+    height:360px;
+
+    overflow:hidden;
+    margin: 0 auto;
+}
+main .god p {
+//background:#ffffff url(../img/check.jpg)no-repeat 27px 15px;
+//padding: 8rem;
+    margin: 7rem 0 0 0 ;
+    border-radius:50%;
+
+    color:red;
+}
+
+.btn-wrap{
+    width:80%;
+    margin:0 auto 2rem;
+}
+input{
+    width: 100%;
+    background: orange;
+    height: 35px;
+    font-size: 1rem;
+}
+footer #star{
+    width:80%;
+}
