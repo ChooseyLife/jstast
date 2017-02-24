@@ -162,8 +162,10 @@
 
         return output;
     }
+    /*
     数组交集
     给定两个数组，要求求出两个数组的交集，注意，交集中的元素应该是唯一的。
+    */
     var firstArray = [2, 2, 4, 1];
     var secondArray = [1, 2, 0, 2];
 
@@ -208,6 +210,14 @@
 
     function reverseBySeparator(string, separator) {
         return string.split(separator).reverse().join(separator);
+    }
+    console.log(StringReverse(string));
+    function StringReverse(string) {
+        if(typeof string==="string"){
+            return Array.prototype.reverse.apply(string);
+        }else{
+            alert("非法参数");
+        }
     }
     /*
     乱序同字母字符串
